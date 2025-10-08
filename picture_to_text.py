@@ -1,8 +1,18 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="图片转ASCII画", page_icon="")
+st.markdown("""
+<style>
+pre {
+    overflow-x: auto;
+    white-space: pre;
+    font-family: Courier, monospace;
+    font-size: clamp(2px, 3.5vw, 14px);   /* 手机自动缩放 */
+}
+</style>
+""", unsafe_allow_html=True)
 
+st.set_page_config(page_title="图片转ASCII画", page_icon="")
 st.title("图片转ASCII画")
 st.write("上传一张图片，自动生成ASCII画！")
 
