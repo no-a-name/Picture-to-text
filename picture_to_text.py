@@ -8,8 +8,9 @@ st.markdown("""
 pre {
     overflow-x: auto;
     white-space: pre;
-    font-family: Courier, monospace;
-    font-size: clamp(2px, 3.5vw, 14px);   /* 手机自动缩放 */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    line-height: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
