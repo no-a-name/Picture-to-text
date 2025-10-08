@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(page_title="图片转ASCII画", page_icon="")
+
 st.markdown("""
 <style>
 pre {
@@ -12,7 +14,6 @@ pre {
 </style>
 """, unsafe_allow_html=True)
 
-st.set_page_config(page_title="图片转ASCII画", page_icon="")
 st.title("图片转ASCII画")
 st.write("上传一张图片，自动生成ASCII画！")
 
